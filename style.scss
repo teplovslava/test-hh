@@ -331,10 +331,12 @@ button{
         z-index: -100;
         backdrop-filter: blur(5px);
         -webkit-backdrop-filter: blur(5px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
             article{
                 position: relative;
-                top: 25%;
-                left: 40%;
                 width: 400px;
                 height: 400px;
                 color: #fff;
@@ -353,7 +355,7 @@ button{
     .pop-up:checked + .popUp{
         z-index: 100;
         opacity: 1;
-        display: block;
+        display: flex;
     }
 }
 
@@ -431,4 +433,26 @@ button{
 .container footer ul{
     padding: 27px 26px 27px 26px;
 }
+
+.container .popUp {
+    article {
+    width: 300px;
+    height: 300px;}
+}
+.container .burger-menu {
+    width: 77.5%;
+    label{
+        font-size: 15px;
+    }
+}
+.container header .burger div {
+    width: 33px;
+    height: 3px;
+}
+}
+
+@media (max-width: 456px){
+    .container header {
+        padding: 55px 20px 48px 20px;
+    }
 }
