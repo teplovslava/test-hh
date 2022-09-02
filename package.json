@@ -5,7 +5,7 @@
   "main": "burger.js",
   "homepage": "https://teplovslava.github.io/test-hh",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy":"gh-pages -d dest"
   },
   "keywords": [],
   "author": "",
